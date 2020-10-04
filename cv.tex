@@ -1,0 +1,91 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+
+\usepackage{mathtext}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc} 
+\usepackage{ucs}
+\usepackage[english,russian]{babel}
+
+\usepackage[export]{adjustbox}
+
+\usepackage{multicol}
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{color}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.80]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\firstname{Egor} % Your first name
+\familyname{Volkov} % Your last name
+
+
+
+
+\begin{document}
+
+\textit{\Huge{\textcolor{gray}{Волков Егор}}}
+
+\hrulefill
+
+\begin{multicols}{2}
+  \section{Контакты}
+  \cvitem{Телефон}{+7-901-179-12-74}
+  \cvitem{Почта}{volkovegor2000@yandex.ru}
+  \cvitem{Telegram}{@Volkov\_Egor}
+  \cvitem{Github}{https://github.com/VolkovEgor}
+  \columnbreak
+  \includegraphics[width=30mm, right]{photo.jpg}
+\end{multicols}
+
+\section{Образование}
+\cventry{2017--н.в.}{МГТУ им. Н. Э. Баумана}{}{}{}{\textit{Программная инженерия, 4 курс}} 
+\vspace*{5mm}
+\cventry{2020--н.в.}{Технопарк Mail.ru}{}{}{}{\textit{Основы машинного обучения}} 
+
+
+\section{Проекты}
+\cventry{2020}{Веб-приложение для изучения английских слов}{}{}{}{Python, Django, PostgreSQL \\ Курсовой проект по базам данных}
+
+\vspace*{5mm}
+
+\cventry{2019}{Трехмерное моделирование цикла извержения вулкана}{}{}{}{C++, Qt \\ Курсовой проект по компьютерной графике}
+
+\vspace*{5mm}
+
+\cventry{2019}{Прогнозирование депрессии на основе образа жизни и состояния здоровья}{}{}{}{Python, Jupyter Notebook \\ Командный проект в рамках студенческого хакатона}
+
+\vspace*{5mm}
+
+\cventry{2018}{Игра <<Tower defense>>}{}{}{}{Python\\
+2D игра в жанре пошаговой стратегии}
+
+\vspace*{5mm}
+
+\cventry{2017}{Игра «Stack Attack»}{}{}{}{
+Python \\
+2D игра-головоломка}
+
+\section{Навыки}
+\begin{multicols}{2}
+  \cvitem{}{\begin{itemize}
+	\item Python, Django
+	\item C/C++, Qt
+	\item SQL, PostgreSQL
+	\end{itemize}}
+	\columnbreak
+	\cvitem{}{\begin{itemize}
+	\item Linux
+	\item Git
+	\item \LaTeX
+	\end{itemize}}
+\end{multicols}
+
+
+\end{document}
